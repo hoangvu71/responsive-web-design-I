@@ -147,6 +147,7 @@ h1, h2, h3, h4, h5 {
 
 .container_middle img{
     width: 60%;
+    height: 60%;
 }
 
 .services_product_vision{
@@ -207,5 +208,59 @@ footer{
 
     footer {
         width: 90%;
+    }
+
+    /* Mobile-View */
+    @media (max-width: 504px){
+        .container_started{
+            margin-top: 2em;
+        }
+
+        .container_nav{
+            flex-direction: column-reverse;
+        }
+
+        .container_nav nav{
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+        }
+
+        .container_nav nav a{
+            border-width: 90%;
+            border-top: 1px solid black;
+            padding: 1em;
+            margin: 0;
+            text-align: center;
+            font-size: 140%;
+        }
+
+        .container_nav nav a:last-child{
+            border-bottom: 1px solid black;
+        }
+
+        .features_about{
+            flex-direction: column;
+        }
+
+        .features_about_child{
+            margin-bottom: 2em;
+        }
+
+        .features_about_child:first-child{
+            margin-right: 0;
+        }
+        
+        .features_about_child:last-child{
+            margin-left: 0;
+        }
+
+        .services_product_vision{
+            flex-direction: column;
+        }
+
+        .services_product_vision div{
+            margin-top: 2em;
+        }
     }
 }
