@@ -145,6 +145,10 @@ h1, h2, h3, h4, h5 {
 	margin-bottom: 2em;
 }
 
+.container_middle img{
+    width: 60%;
+}
+
 .services_product_vision{
 	display: flex;
 	width: 60%;
@@ -169,4 +173,39 @@ footer{
 	display: flex;
 	justify-content: center;
 	margin-top: 2em;
+}
+
+/*Tablet View */
+@media (max-width: 800px){
+    .container_nav{
+        flex-direction: column-reverse;
+    }
+
+    .container_nav img{
+        margin-bottom: 2em;
+    }
+
+    .header_container img{
+        display: none;
+    }
+
+    .features_about{
+        width:90%;
+    }
+
+    .divider{
+        width:90%;
+    }
+
+    .container_middle img{
+        width: 90%;
+    }
+
+    .services_product_vision{
+        width: 90%;
+    }
+
+    footer {
+        width: 90%;
+    }
 }
